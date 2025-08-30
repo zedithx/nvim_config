@@ -1,4 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
+vim.cmd('colorscheme habamax')
 
 local opt = vim.opt -- for conciseness
 
@@ -28,6 +29,7 @@ opt.cursorline = true -- highlight the current cursor line
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+vim.opt.fillchars = { eob = " " }
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- backspace

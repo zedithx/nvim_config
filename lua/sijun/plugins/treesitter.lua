@@ -22,20 +22,11 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
-        -- requested
-        "yaml",
-        "python",
-        "typescript",
-        "javascript",
-        "java",
-        "dockerfile",
-        "bash",
-        "vim",
-        "gitignore",
-        "ruby",
-        "tsx",        -- tsx (typescript + jsx)
-        -- keep your existing/common ones
         "json",
+        "javascript",
+        "typescript",
+        "tsx",
+        "yaml",
         "html",
         "css",
         "prisma",
@@ -43,7 +34,11 @@ return {
         "markdown_inline",
         "svelte",
         "graphql",
+        "bash",
         "lua",
+        "vim",
+        "dockerfile",
+        "gitignore",
         "query",
         "vimdoc",
         "c",
@@ -51,8 +46,8 @@ return {
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = "<c-space>",
-          node_incremental = "<c-space>",
+          init_selection = "<C-space>",
+          node_incremental = "<C-space>",
           scope_incremental = false,
           node_decremental = "<bs>",
         },
